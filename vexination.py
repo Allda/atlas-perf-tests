@@ -1,11 +1,13 @@
-from locust import HttpUser, task, between
+import os
+
+from locust import HttpUser, between, task
 
 from client import CLIENT
 
 
 class VexinationTasks(HttpUser):
     wait_time = between(1, 2)
-    host = "https://vex.atlas.stage.devshift.net"
+    host = os.environ.get("VEXINATION_HOST", "https://vex.atlas.stage.devshift.net")
     vex_id = "CVE-1990-1111"
 
     def on_start(self) -> None:
