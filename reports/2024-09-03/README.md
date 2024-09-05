@@ -2,6 +2,11 @@
 
 This report was generated using `make` command on 2024-09-03.
 
+> **_NOTE:_**  All the values in the table bellow represents a response time
+of the requests from client to Atlas and back. The X axes of the table represents
+a individual buckets.
+
+
 | Type   | Name                                                                          |  50%  |  66%  |  75%  |  80%  |  90%  |  95%  |  98%  |  99%  | 99.9% | 99.99% | 100% | # reqs |
 |--------|-------------------------------------------------------------------------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|-------|-------|
 | DELETE | /api/v1/sbom                                                                  |   260 |   280 |   310 |   320 |   390 |   460 |   680 |   740 |   740 |    740 |   740 |    76 |

@@ -29,6 +29,14 @@ export BOMBASTIC_HOST="https://bombastic.example.com"
 export VEXINATION_HOST="https://vexination.example.com"
 ```
 
+### Test data
+To be able test a performance of GET and search queries the test suite initialize Atlas
+instance with a test SBOM and VEX documents. These documents are loaded to Atlas
+at a beginning of the process only once and stays there. The initial upload is done only
+once.
+
+The test data can be found [here](./data/)
+
 ### Review results in UI
 The locust framework provides a visualization that reflects a test cases and results.
 Test can be executed using
